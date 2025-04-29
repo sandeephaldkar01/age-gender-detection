@@ -61,7 +61,8 @@ After running the notebook, the webcam window will open and display the age and 
 
 Author
 
-Sandeep Phaldkar
+Sandeep Haldkar
+
 This is my first machine learning project using deep learning and OpenCV.
 
 
