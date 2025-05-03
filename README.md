@@ -1,75 +1,125 @@
-Age and Gender Detection Project
+ # Age and Gender Detection using OpenCV (Offline in VS Code)
 
-This is a basic computer vision project that detects the age and gender of a person using their webcam image, based on deep learning models and OpenCV.
+This project detects the age and gender of a person using pre-trained deep learning models with OpenCV.
+
+---
+
+## Step 1: Install Python
+
+1. Download Python from [https://www.python.org/downloads](https://www.python.org/downloads)
+2. Run the installer and *check the box that says “Add Python to PATH”*
+3. Open Command Prompt and verify installation:
+   ```bash
+   python --version
 
 
 ---
 
-How to Run the Project
+Step 2: Install Visual Studio Code (VS Code)
 
-1. Clone or Download the Repository
-
-GitHub Link: https://github.com/sandeephaldkar01/age-gender-detection
-
-Use the green "Code" button to download as ZIP, or run this command in terminal:
+1. Download from https://code.visualstudio.com
 
 
-git clone https://github.com/sandeephaldkar01/age-gender-detection.git
+2. Install and open VS Code.
 
-2. Install Requirements
 
-Make sure you have Python 3.x installed. Then install the required Python libraries:
+
+
+---
+
+Step 3: Install VS Code Extensions
+
+Open VS Code and install the following extensions:
+
+Python (by Microsoft)
+
+Jupyter (by Microsoft)
+
+
+Use the Extensions icon on the left sidebar.
+
+
+---
+
+Step 4: Open the Project
+
+1. Extract the ZIP file you received.
+
+
+2. Open VS Code → Go to File > Open Folder → Select the extracted folder.
+
+
+3. Make sure the following files are present:
+
+detection.ipynb
+
+age_net.caffemodel
+
+gender_net.caffemodel
+
+age_deploy.prototxt
+
+gender_deploy.prototxt
+
+opencv_face_detector.pbtxt
+
+opencv_face_detector_uint8.pb
+
+
+
+
+
+---
+
+Step 5: Create and Activate a Virtual Environment (Optional but Recommended)
+
+Open terminal in VS Code (Ctrl + backtick or Terminal > New Terminal), then run:
+
+python -m venv venv
+
+Activate it (Windows):
+
+venv\Scripts\activate
+
+
+---
+
+Step 6: Install Required Packages
+
+In the terminal, run:
 
 pip install opencv-python numpy
 
-3. Run the Jupyter Notebook
-
-jupyter notebook
-
-Open detection.ipynb
-
-Run all the cells one-by-one
-
-
-4. Allow Webcam Access
-
-Make sure your webcam is working. The model will use it to capture your image and predict age and gender.
-
 
 ---
 
-Files in the Repository
+Step 7: Run the Notebook
 
-detection.ipynb: Jupyter Notebook that runs the detection script
+1. In the Explorer sidebar, double-click detection.ipynb
 
-age_net.caffemodel / gender_net.caffemodel: Pretrained age & gender models
 
-age_deploy.prototxt / gender_deploy.prototxt: Network definitions for the models
+2. It will open in notebook format with Run buttons.
 
-opencv_face_detector.pbtxt / .pb: OpenCV DNN-based face detector
+
+3. Click the Run button next to each code cell to execute the code step by step.
+
 
 
 
 ---
 
-Output
+Notes
 
-After running the notebook, the webcam window will open and display the age and gender prediction for any detected face.
+Do NOT use Google Colab or online Jupyter; this project runs fully offline.
+
+Make sure all required model files are in the same folder.
+
+If any module is missing, install it using pip install <module-name>
+
 
 
 ---
 
-Author
+Happy Coding!
 
-Sandeep Haldkar
-
-This is my first machine learning project using deep learning and OpenCV.
-
-
-
-
-
-
-
-
-
+---
